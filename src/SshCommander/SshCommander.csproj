@@ -2,7 +2,30 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
+		<!-- <TargetFrameworks>net462;netstandard2.0;netstandard2.1;net6.0;net7.0;net8.0</TargetFrameworks> -->
+		<AssemblyName>SSH.Commander</AssemblyName>
+		<Product>SSH.Commander</Product>
+		<AssemblyTitle>SSH.Commander</AssemblyTitle>
 		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageId>SSH.Commander</PackageId>
+		<Title>SSH.Commander</Title>
+		<Version>0.9.0</Version>
+		<Description>dotnet library for convenient use of ssh</Description>
+		<Copyright>Copyright © mdimai666 2024-$([System.DateTime]::UtcNow.Year)</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Authors>mdimai666</Authors>
+		<PackageIcon>ssh-commander-icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>ssh;</PackageTags>
+		<PackageProjectUrl>https://github.com/mdimai666/SSH.Commander</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/mdimai666/SSH.Commander</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes>https://github.com/mdimai666/SSH.Commander/releases/tag/$(Version)</PackageReleaseNotes>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -13,6 +36,17 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Ssh-Config-Parser\SshConfigParser\SshConfigParser.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\ssh-commander-icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>

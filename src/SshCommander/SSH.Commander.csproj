@@ -33,6 +33,7 @@
 		<PackageReference Include="Microsoft.DevTunnels.Ssh" Version="3.11.36" />
 		<PackageReference Include="Microsoft.DevTunnels.Ssh.Keys" Version="3.11.36" />
 		<PackageReference Include="Microsoft.DevTunnels.Ssh.Tcp" Version="3.11.36" />
+		<PackageReference Include="System.Text.Json" Version="8.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>

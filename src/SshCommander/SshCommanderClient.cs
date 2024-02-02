@@ -202,7 +202,7 @@ namespace SSH.Commander
             return Config.SshConfigFilePath.StartsWith('~') ? Path.Join(userPath, path.Substring(2).ToString()) : Config.SshConfigFilePath;
         }
 
-        public void Log(string message)
+        void Log(string message)
         {
             if (Config.VerboseConsoleLog)
             {

@@ -1,13 +1,13 @@
 ﻿using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SshConfigParser
+namespace SSH.Commander.SshConfigParser
 {
     // Based on code from https://github.com/dotnil/ssh-config
     public static class Globber
     {
-        static readonly Regex _patternSplitter =  new Regex("[,\\s]+");
-        
+        static readonly Regex _patternSplitter = new Regex("[,\\s]+");
+
         private static bool Match(string pattern, string str)
         {
             pattern = pattern.Replace(".", "\\.")
@@ -26,8 +26,8 @@ namespace SshConfigParser
         /// <returns></returns>
         public static bool Glob(string patternList, string str)
         {
-           var patterns = _patternSplitter.Split(patternList)
-                .OrderByDescending(a => a.StartsWith("!"));
+            var patterns = _patternSplitter.Split(patternList)
+                 .OrderByDescending(a => a.StartsWith("!"));
 
             foreach (var pattern in patterns)
             {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace SshConfigParser
+namespace SSH.Commander.SshConfigParser
 {
     internal static class Extensions
     {

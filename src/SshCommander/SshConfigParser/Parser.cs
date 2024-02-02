@@ -8,9 +8,9 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using static SshConfigParser.Globber;
+using static SSH.Commander.SshConfigParser.Globber;
 
-namespace SshConfigParser
+namespace SSH.Commander.SshConfigParser
 {
     // Based on code from https://github.com/dotnil/ssh-config
 
@@ -127,7 +127,7 @@ namespace SshConfigParser
                     }
                 }
             }
-            
+
             // Make sure host/match are first.
             var keys = opts.Keys.OfType<string>()
                 .OrderByDescending(key => RE_SECTION_DIRECTIVE.IsMatch(key.ToString()));
@@ -187,12 +187,12 @@ namespace SshConfigParser
                 throw new Exception("Can only find by Host or Match");
             }
 
-            var query = from line in this._nodes
-                where line.Type == NodeType.Directive
-                      && RE_SECTION_DIRECTIVE.IsMatch(line.Param)
-                      && line.Param == findBy
-                      && find == line.Value
-                select line;
+            var query = from line in _nodes
+                        where line.Type == NodeType.Directive
+                              && RE_SECTION_DIRECTIVE.IsMatch(line.Param)
+                              && line.Param == findBy
+                              && find == line.Value
+                        select line;
 
 
             return query.FirstOrDefault();
@@ -216,7 +216,7 @@ namespace SshConfigParser
                 }
                 else if (line.Type == NodeType.Directive)
                 {
-                    string str = line.Quoted || (line.Param == "IdentityFile" && RE_SPACE.IsMatch(line.Value))
+                    string str = line.Quoted || line.Param == "IdentityFile" && RE_SPACE.IsMatch(line.Value)
                         ? line.Param + line.Separator + '"' + line.Value + '"'
                         : line.Param + line.Separator + line.Value;
 
@@ -337,7 +337,7 @@ namespace SshConfigParser
                     chr = Next();
                 }
 
-                return new ConfigNode {Type = type, Content = content};
+                return new ConfigNode { Type = type, Content = content };
             }
 
             ConfigNode Directive()

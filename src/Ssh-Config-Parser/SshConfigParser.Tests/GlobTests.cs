@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using static SshConfigParser.Globber;
+using static SSH.Commander.SshConfigParser.Globber;
 
 namespace SshConfigParser.Tests
 {

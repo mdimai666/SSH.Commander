@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
+using SSH.Commander.SshConfigParser;
 using Xunit;
 
 namespace SshConfigParser.Tests
@@ -164,7 +163,7 @@ namespace SshConfigParser.Tests
             opts.User.ShouldEqual("nil");
 
             opts.IdentityFile.ShouldEqual("~/.ssh/id_rsa");
-//            ((List<object>) opts["IdentityFile"])[0].ShouldEqual("~/.ssh/id_rsa");
+            //            ((List<object>) opts["IdentityFile"])[0].ShouldEqual("~/.ssh/id_rsa");
 
             // the first obtained parameter value will be used. So there's no way to
             // override parameter values.
@@ -369,7 +368,7 @@ namespace SshConfigParser.Tests
             host.Config[2].Param.ShouldEqual("Port");
             host.Config[2].Value.ShouldEqual("123");
         }
-        
+
         [Fact]
         public void Adds_host_with_alias_using_hash()
         {
@@ -388,7 +387,7 @@ namespace SshConfigParser.Tests
             host.ShouldNotBeNull();
             host.Value.ShouldEqual("test1");
             host.Param.ShouldEqual("Host");
-            
+
             //Can't rely on index - hashtable not ordered
 
             host.Config.Count.ShouldEqual(3);

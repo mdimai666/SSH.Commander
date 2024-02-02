@@ -36,10 +36,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Ssh-Config-Parser\SshConfigParser\SshConfigParser.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Include="..\..\ssh-commander-icon.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>

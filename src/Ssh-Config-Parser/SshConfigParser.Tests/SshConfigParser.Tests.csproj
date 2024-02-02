@@ -13,6 +13,9 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SshCommander\SSH.Commander.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -43,8 +46,5 @@
     <None Update="config10">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SshConfigParser\SshConfigParser.csproj" />
   </ItemGroup>
 </Project>

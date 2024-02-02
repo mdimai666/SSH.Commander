@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34526.213
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSH.Commander", "SshCommander\SSH.Commander.csproj", "{27B63B30-35C5-480F-80FC-7F53F2EC7995}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser", "Ssh-Config-Parser\SshConfigParser\SshConfigParser.csproj", "{EECD292B-C06A-44F4-9A81-3928B6F1C298}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser.Tests", "Ssh-Config-Parser\SshConfigParser.Tests\SshConfigParser.Tests.csproj", "{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSH.Commander.Tests", "SshCommander.Tests\SSH.Commander.Tests.csproj", "{1CAABBB5-2A74-45F4-8BF1-DD39400AF9FE}"
@@ -23,10 +21,6 @@ Global
 		{27B63B30-35C5-480F-80FC-7F53F2EC7995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27B63B30-35C5-480F-80FC-7F53F2EC7995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27B63B30-35C5-480F-80FC-7F53F2EC7995}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EECD292B-C06A-44F4-9A81-3928B6F1C298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EECD292B-C06A-44F4-9A81-3928B6F1C298}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EECD292B-C06A-44F4-9A81-3928B6F1C298}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EECD292B-C06A-44F4-9A81-3928B6F1C298}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -40,7 +34,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EECD292B-C06A-44F4-9A81-3928B6F1C298} = {D24974D3-5D64-42B7-BEE3-1093E9BFF27F}
 		{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39} = {D24974D3-5D64-42B7-BEE3-1093E9BFF27F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

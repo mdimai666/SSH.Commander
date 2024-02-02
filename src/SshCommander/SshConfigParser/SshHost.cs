@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SshConfigParser
+namespace SSH.Commander.SshConfigParser
 {
     public class SshHost
     {

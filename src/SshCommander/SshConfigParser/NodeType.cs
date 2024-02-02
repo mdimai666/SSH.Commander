@@ -1,4 +1,4 @@
-﻿namespace SshConfigParser
+﻿namespace SSH.Commander.SshConfigParser
 {
     public enum NodeType
     {

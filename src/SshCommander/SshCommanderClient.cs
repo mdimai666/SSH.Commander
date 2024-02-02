@@ -8,7 +8,7 @@ using Microsoft.DevTunnels.Ssh;
 using Microsoft.DevTunnels.Ssh.Algorithms;
 using Microsoft.DevTunnels.Ssh.Messages;
 using Microsoft.DevTunnels.Ssh.Tcp;
-using SshConfigParser;
+using SSH.Commander.SshConfigParser;
 
 namespace SSH.Commander
 {

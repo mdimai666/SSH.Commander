@@ -13,7 +13,7 @@
 	<PropertyGroup>
 		<PackageId>SSH.Commander</PackageId>
 		<Title>SSH.Commander</Title>
-		<Version>0.9.0</Version>
+		<Version>0.9.1</Version>
 		<Description>dotnet library for convenient use of ssh</Description>
 		<Copyright>Copyright © mdimai666 2024-$([System.DateTime]::UtcNow.Year)</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

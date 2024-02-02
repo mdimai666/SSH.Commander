@@ -4,6 +4,8 @@
 
 # SSH.Commander
 
+#### [![Nuget](https://img.shields.io/nuget/v/SSH.Commander)](https://www.nuget.org/packages/SSH.Commander/) 
+
 dotnet library for convenient use of ssh
 
 the library can use the config file ~/.ssh/config

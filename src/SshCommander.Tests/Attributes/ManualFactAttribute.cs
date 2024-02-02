@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Zyfra.Eom.Integration.Tests.Attributes;
+namespace SSH.Commander.Tests.Attributes;
 
 public class ManualFactAttribute : FactAttribute
 {

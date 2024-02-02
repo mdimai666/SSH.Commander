@@ -1,6 +1,6 @@
 using FluentAssertions;
 
-namespace SshCommander.Tests;
+namespace SSH.Commander.Tests;
 
 public class TestSshUri
 {

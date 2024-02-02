@@ -10,7 +10,7 @@ using Microsoft.DevTunnels.Ssh.Messages;
 using Microsoft.DevTunnels.Ssh.Tcp;
 using SshConfigParser;
 
-namespace SshCommander
+namespace SSH.Commander
 {
     public class SshCommanderClient
     {
@@ -111,7 +111,7 @@ namespace SshCommander
             };
 
 
-            if (!(await session.AuthenticateAsync(credentials)))
+            if (!await session.AuthenticateAsync(credentials))
             {
                 throw new Exception("Authentication failed.");
             }
@@ -199,7 +199,7 @@ namespace SshCommander
 
         string ReplaceTildaAsUserDir(string path)
         {
-            return Config.SshConfigFilePath.StartsWith('~') ? (Path.Join(userPath, path.Substring(2).ToString())) : Config.SshConfigFilePath;
+            return Config.SshConfigFilePath.StartsWith('~') ? Path.Join(userPath, path.Substring(2).ToString()) : Config.SshConfigFilePath;
         }
 
         public void Log(string message)

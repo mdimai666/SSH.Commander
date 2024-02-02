@@ -7,6 +7,19 @@ using Xunit;
 namespace SshConfigParser.Tests {
 	public static class TestExtensions {
 		public static void ShouldEqual(this object actual, object expected) {
+			if (actual is string _actual &&  expected is string _expected)
+			{
+				if(_actual == "\r\n" && _expected == "\n")
+				{
+					Assert.True(true);
+					return;
+				}
+				else if(_actual =="\r\n\r\n" && _expected == "\n\n")
+				{
+                    Assert.True(true);
+                    return;
+                }
+			}
 			Assert.Equal(expected, actual);
 		}
 

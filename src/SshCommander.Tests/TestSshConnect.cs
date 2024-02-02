@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
-using Zyfra.Eom.Integration.Tests.Attributes;
+using SSH.Commander.Tests.Attributes;
 
-namespace SshCommander.Tests;
+namespace SSH.Commander.Tests;
 
 public class TestSshConnect
 {

@@ -6,6 +6,7 @@
 		<AssemblyName>SSH.Commander</AssemblyName>
 		<Product>SSH.Commander</Product>
 		<AssemblyTitle>SSH.Commander</AssemblyTitle>
+		<RootNamespace>SSH.Commander</RootNamespace>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 

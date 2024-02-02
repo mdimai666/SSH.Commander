@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 
-namespace SshCommander
+namespace SSH.Commander
 {
     public class SshUri
     {

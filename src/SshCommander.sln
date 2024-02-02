@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34526.213
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshCommander", "SshCommander\SshCommander.csproj", "{27B63B30-35C5-480F-80FC-7F53F2EC7995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSH.Commander", "SshCommander\SSH.Commander.csproj", "{27B63B30-35C5-480F-80FC-7F53F2EC7995}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser", "Ssh-Config-Parser\SshConfigParser\SshConfigParser.csproj", "{EECD292B-C06A-44F4-9A81-3928B6F1C298}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser.Tests", "Ssh-Config-Parser\SshConfigParser.Tests\SshConfigParser.Tests.csproj", "{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshCommander.Tests", "SshCommander.Tests\SshCommander.Tests.csproj", "{1CAABBB5-2A74-45F4-8BF1-DD39400AF9FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SSH.Commander.Tests", "SshCommander.Tests\SSH.Commander.Tests.csproj", "{1CAABBB5-2A74-45F4-8BF1-DD39400AF9FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdLib", "ThirdLib", "{D24974D3-5D64-42B7-BEE3-1093E9BFF27F}"
 EndProject

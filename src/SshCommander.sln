@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser", "Ssh-Conf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshConfigParser.Tests", "Ssh-Config-Parser\SshConfigParser.Tests\SshConfigParser.Tests.csproj", "{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SshCommander.Tests", "SshCommander.Tests\SshCommander.Tests.csproj", "{1CAABBB5-2A74-45F4-8BF1-DD39400AF9FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SshCommander.Tests", "SshCommander.Tests\SshCommander.Tests.csproj", "{1CAABBB5-2A74-45F4-8BF1-DD39400AF9FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdLib", "ThirdLib", "{D24974D3-5D64-42B7-BEE3-1093E9BFF27F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EECD292B-C06A-44F4-9A81-3928B6F1C298} = {D24974D3-5D64-42B7-BEE3-1093E9BFF27F}
+		{D25CD4CE-9BC2-43C4-8311-CF3D5A82DA39} = {D24974D3-5D64-42B7-BEE3-1093E9BFF27F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE4E5239-750A-4E34-A23D-1BCE770A750A}
